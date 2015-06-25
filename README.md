@@ -28,7 +28,7 @@ Skipping 5 packages not available: DO.db, GO.db, org.Ce.eg.db, org.Hs.eg.db, rea
 ```
 
 check if the packages were indeed skipped
-```
+```{r}
 c("DO.db", "GO.db", "org.Ce.eg.db", "org.Hs.eg.db", "reactome.db") %in% rownames(installed.packages())
 ```
 
