@@ -16,7 +16,23 @@ source("http://bioconductor.org/bioLite.R")
 biocLite("vladpetyuk/toypack", build_vignettes=TRUE)
 ```
 
-to check if everything went fine check the library and the vignette pdf 
+the message during the installation process, says that the aforementioned
+packages are skipped
+```
+BioC_mirror: http://bioconductor.org
+Using Bioconductor version 3.1 (BiocInstaller 1.18.3), R version 3.2.1.
+Installing github package(s) ‘vladpetyuk/toypack’
+Downloading github repo vladpetyuk/toypack@master
+Installing toypack
+Skipping 5 packages not available: DO.db, GO.db, org.Ce.eg.db, org.Hs.eg.db, reactome.db
+```
+
+check if the packages were indeed skipped
+```
+c("DO.db", "GO.db", "org.Ce.eg.db", "org.Hs.eg.db", "reactome.db") %in% rownames(installed.packages())
+```
+
+to check if other things went fine check the library and the vignette pdf 
 ```{r}
 library("toypack")
 vignette("toypack")
