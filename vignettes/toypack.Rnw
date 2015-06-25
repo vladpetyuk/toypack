@@ -1,0 +1,51 @@
+%\VignettePackage{toypack}
+%\VignetteIndexEntry{toypack}
+%\VignetteDepends{rpx, jsonlite, xtable, BiocStyle, MSnID, MSnbase, biomaRt, msmsTests, GOstats, org.Ce.eg.db, ReactomePA, DOSE, graphite, KEGGREST, pathview}
+%\VignetteKeywords{Documentation}
+%\VignetteEngine{knitr::knitr}
+
+\documentclass[11pt]{article}
+\usepackage[authoryear,round]{natbib}
+\usepackage{booktabs}
+\usepackage{colortbl, xcolor}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{caption}
+
+
+<<style-knitr, eval=TRUE, echo=FALSE, results="asis">>=
+BiocStyle::latex(use.unsrturl=FALSE)
+@
+
+
+
+\title{Toy Package}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{What this is for?}
+This package is for testing that all the contingency in the form of 
+R/Bioconductor packages and {\LaTeX} packages can be installed on a
+"fresh" computer.
+
+\section{Session information}
+All software and respective versions used in this document, as returned by sessionInfo() are detailed below.
+<<sessionInfo, results='asis', echo=FALSE>>=
+toLatex(sessionInfo())
+@
+
+\end{document}
+
+
+
+
+
