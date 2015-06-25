@@ -15,3 +15,9 @@ to install please run:
 source("http://bioconductor.org/bioLite.R")
 biocLite("vladpetyuk/toypack", build_vignettes=TRUE)
 ```
+
+to check if everything went fine check the library and the vignette pdf 
+```{r}
+library("toypack")
+vignette("toypack")
+```
