@@ -13,7 +13,7 @@ remove.packages(c("DO.db", "GO.db", "org.Ce.eg.db", "org.Hs.eg.db", "reactome.db
 to install please run:
 ```{r}
 source("http://bioconductor.org/biocLite.R")
-biocLite("vladpetyuk/toypack", build_vignettes=TRUE)
+biocLite("vladpetyuk/toypack", build_vignettes=TRUE, dependencies=TRUE)
 ```
 
 the message during the installation process, says that the aforementioned
