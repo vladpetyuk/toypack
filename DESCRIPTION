@@ -1,0 +1,19 @@
+Package: toypack
+Type: Package
+Title: Toy Package
+Version: 0.1
+Date: 2015-06-25
+Author: Vlad Petyuk
+Maintainer: Vlad Petyuk <vladislav.petyuk@pnnl.gov>
+Description: Toy Package for Testing Package Installation on Fresh Computers.
+            At this point there issues have been discovered in installation
+            of some R/Bioconductor packages such as "DO.db", "GO.db", 
+            "org.Ce.eg.db", "org.Hs.eg.db" and "reactome.db". The fact that
+            some of the used LaTeX packages are missing also results in error
+            during vignette compilation.
+License: Artistic-2.0
+Depends: R (>=3.2.0)
+Suggests: BiocStyle, knitr, rpx, jsonlite, xtable, MSnID, MSnbase, biomaRt,
+            msmsTests, GOstats, org.Ce.eg.db, ReactomePA (>=1.13.2),
+            DOSE (>=2.7.6), graphite, KEGGREST, pathview
+VignetteBuilder: knitr
