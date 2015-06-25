@@ -21,3 +21,8 @@ to check if everything went fine check the library and the vignette pdf
 library("toypack")
 vignette("toypack")
 ```
+
+clean-up
+```{r}
+remove.packages("toypack")
+```
